@@ -1,0 +1,250 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black-color: rgba(25, 24, 24, 1);
+  --white-color: rgba(255, 255, 255, 1);
+  --yellow-color: rgba(235, 217, 107, 1);
+  --gray-color: rgba(127, 127, 127, 1);
+  --light-gray-color: rgba(211, 211, 211, 1);
+  --header-gray-color: rgba(244, 246, 245, 1);
+  --news-letter-yellow-color: rgba(229, 198, 67, 1);
+  --customer-mail-textbox-gray: rgba(118, 118, 118, 1);
+  --footer-header-link-gray: rgba(217, 217, 217, 1);
+  --footer-other-link-gray: rgba(142, 142, 142, 1);
+  --phone-text-gray: rgba(110, 111, 114, 1);
+
+  --phone-font-size: 6px;
+  --tablet-font-size: 8px;
+  --laptop-font-size: 10px;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+section {
+  opacity: 0;
+}
+
+footer {
+  opacity: 0;
+}
+
+.slide-left-animation {
+  animation: slideInLeft 0.5s;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.slide-right-animation {
+  animation: slideInRight 0.5s;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.d-i-block {
+  display: inline-block;
+}
+
+.d-initial {
+  display: initial !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-col-rev {
+  flex-direction: column-reverse;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-c {
+  text-transform: capitalize;
+}
+
+.text-u {
+  text-transform: uppercase;
+}
+
+.text-cen {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.shake-animation {
+  animation: shake 1s linear;
+}
+
+.curve {
+  animation: curve 1s linear;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+@keyframes curve {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateX(-75%);
+  }
+
+  50% {
+    transform: translate(-50%, 100%);
+    opacity: 0.25;
+  }
+
+  75% {
+    transform: translate(-25%, -100%);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  62.5% {
+    transform: rotate(2deg);
+  }
+
+  75% {
+    transform: rotate(-2deg);
+  }
+
+  87.5% {
+    transform: rotate(2deg);
+  }
+
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes arrive {
+  from {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes vibrate {
+  0% {
+    transform: rotate(2deg);
+  }
+
+  25% {
+    transform: rotate(-2deg);
+  }
+
+  50% {
+    transform: rotate(2deg);
+  }
+
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}

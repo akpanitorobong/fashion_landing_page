@@ -1,0 +1,222 @@
+.phone {
+  padding: 4em 2.62em;
+  max-width: 100%;
+  width: 35em;
+  height: 77em;
+  font-size: 6px;
+
+  border-radius: 3.4975em;
+  border: 2.258em solid #c2c8da;
+  background: #fff;
+  box-shadow: 0px 0.4em 6.3em 0px rgba(0, 0, 0, 0.25);
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.phone .phone-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone .phone-header .phone-profile-image {
+  border-radius: 100%;
+  width: 3.9347em;
+  height: 3.6724em;
+
+  object-fit: cover;
+}
+
+.phone .phone-body {
+  margin-top: 2em;
+}
+
+.phone .phone-body .p-text-container {
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+.phone .phone-body .p-text-container .p-text {
+  font-size: 2em;
+
+  position: relative;
+  z-index: 2;
+}
+
+.btn-curve {
+  width: calc(0.1em + 15%);
+  height: calc(0.0168em + 15%);
+  transform: translate(-100%, 100%) rotate(-5deg);
+}
+
+.phone .phone-body .search-container {
+  margin-top: 1.4em;
+  width: 100%;
+  background-color: var(--light-gray-color);
+  border-radius: 1.4em;
+  gap: 1em;
+  padding: 0.4em 1.2em;
+}
+
+.phone .phone-body .search-text-container .search-text {
+  font-size: 2em;
+  font-family: "Inter";
+  font-weight: 400;
+  color: var(--phone-text-gray);
+}
+
+.phone .phone-body .trending-container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 2em;
+}
+
+.phone .phone-body .trending-container button {
+  border: none;
+  background-color: rgba(233, 230, 230, 1);
+
+  padding: 1em 1.5em;
+  border-radius: 1.2em;
+
+  text-transform: capitalize;
+
+  font-family: "Poppins";
+  font-weight: 500;
+  color: rgba(138, 138, 138, 1);
+}
+
+.phone .phone-body .trending-container .yellow {
+  background-color: rgba(235, 217, 107, 1);
+}
+
+.phone .phone-body .trending-container .yellow span {
+  color: var(--black-color);
+}
+
+.phone .phone-body .trending-container button span {
+  font-size: 1.3em;
+}
+
+.phone .phone-body .products {
+  /* gap: 2em; */
+  max-width: 100%;
+}
+
+.phone .phone-body .products .row {
+  gap: 2em;
+}
+
+.phone .phone-body .products .card {
+  margin: 2em 0 0;
+}
+
+.phone .phone-body .products .card .card-image {
+  height: 30em;
+}
+
+.phone .phone-body .products .title-text-container,
+.phone .phone-body .products .explore-text-container {
+  margin: 0;
+  padding: 0;
+}
+
+.phone .phone-body .products .title-text-container .title-text,
+.phone .phone-body .products .explore-text-container .explore-text {
+  font-size: 1em;
+}
+
+.phone .phone-nav {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--white-color);
+
+  padding: 1em;
+
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-bottom-right-radius: 3.4975em;
+  border-bottom-left-radius: 3.4975em;
+}
+
+.phone .phone-nav svg {
+  width: 2.3608em;
+  height: 2.2734em;
+}
+
+.phone-nav .cart-group {
+  position: relative;
+}
+
+.phone-nav .cart-group .items-container {
+  position: absolute;
+  top: -1em;
+  right: -1em;
+  /* padding: 1em; */
+  background-color: red;
+  width: 2em;
+  height: 2em;
+
+  border-radius: 50%;
+  color: #fff;
+}
+
+.phone-nav .cart-group .items-container span {
+  position: absolute;
+}
+
+@media (min-width: 400px) {
+  .phone {
+    font-size: 8px;
+  }
+
+  .phone .phone-body .trending-container button span {
+    font-size: 2em;
+  }
+
+  .phone .phone-body .products .title-text-container .title-text,
+  .phone .phone-body .products .explore-text-container .explore-text {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 450px) {
+  .phone .phone-body .trending-container button span {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 600px) {
+  .app-invite {
+    flex-direction: row;
+    gap: 3em;
+    justify-content: space-around;
+  }
+
+  .app-invite .left-content {
+    flex-basis: 30%;
+  }
+}
+
+@media (min-width: 700px) {
+  .phone {
+    font-size: 10px;
+  }
+
+  .app-invite .left-content {
+    flex-basis: 40%;
+  }
+  .app-invite .phone {
+    flex-shrink: 0;
+  }
+}
+@media (min-width: 1100px) {
+  .phone {
+    font-size: 12px;
+  }
+}

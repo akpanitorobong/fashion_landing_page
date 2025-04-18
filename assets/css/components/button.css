@@ -1,0 +1,83 @@
+.btn {
+  border: 1px solid var(--black-color);
+  border-radius: 1em;
+
+  padding: 2em 4em;
+
+  font-size: 8px;
+  font-weight: 500;
+
+  background-color: var(--black-color);
+  color: var(--white-color);
+
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn .btn-text {
+  font-size: 3em;
+}
+
+.btn:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-curve {
+  width: calc(0.1em + 10%);
+  height: calc(0.0168em + 10%);
+}
+
+.shop-now {
+  color: var(--white-color);
+  font-size: 1.875rem;
+  text-decoration: none;
+  background: var(--black-color);
+  border-radius: 0.625rem;
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  width: fit-content;
+}
+
+.shop-now:hover {
+  background: var(--white-color);
+  color: var(--black-color);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-container {
+  margin-top: 3em;
+}
+
+.submit-mail-btn {
+  padding: 1em 2em;
+  font-size: 1.2em;
+}
+
+@media (min-width: 500px) {
+  .shop-now {
+    font-size: 2.5em;
+    padding: 2.2rem 3.5rem;
+  }
+}
+@media (min-width: 700px) {
+  .btn {
+    font-size: 10px;
+  }
+
+  .btn-container {
+    justify-content: flex-start;
+  }
+
+  .shop-now {
+    font-size: 2.5rem;
+    padding: 2.2rem 3.5rem;
+  }
+
+  .submit-mail-btn {
+    padding: 1em 2em;
+    font-size: 2em;
+  }
+}

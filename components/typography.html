@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/components/base.css" />
+    <link rel="stylesheet" href="../assets/css/components/typography.css" />
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="/assets/js/js.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5f52afd462.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Typography</title>
+  </head>
+  <body>
+    <nav class="page-nav d-flex align-center text-u">
+      <div class="mobile-menu-group align-center space-between">
+        <div class="icon-group">
+          <a class="d-flex align-center" href="#">
+            <img src="/assets/img/logo.png" alt="logo icon" />
+            <span>fashion</span>
+          </a>
+        </div>
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a
+          href="javascript:void(0);"
+          class="hamburger-icon"
+          id="hamburger-icon"
+          onclick="showMobileMenu()"
+        >
+          <span class="menu-bars bar1"></span>
+          <span class="menu-bars bar2"></span>
+          <span class="menu-bars bar3"></span>
+        </a>
+      </div>
+
+      <ul id="menu-items" class="menu-items d-flex">
+        <li>catalogue</li>
+        <li>fashion</li>
+        <li>favorite</li>
+        <li>lifestyle</li>
+        <li>sign up</li>
+      </ul>
+    </nav>
+    <span class="shake-container text m-1">
+      <span class="shake shake-yellow"></span>
+      <span class="shake-text-container">
+        <span class="shake-text">let's</span>
+      </span>
+    </span>
+
+    <h1 class="h1-text-container text m-1">
+      <span class="h1-text">
+        <span class="shake-container text">
+          <span class="shake"></span>
+          <span class="shake-text-container">
+            <span class="shake-text">let's</span>
+          </span>
+        </span>
+        explore
+        <span class="shake-container text">
+          <span class="shake shake-yellow"></span>
+          <span class="shake-text-container">
+            <span class="shake-text">unique</span>
+          </span>
+        </span>
+        clothes.
+      </span>
+    </h1>
+
+    <h2 class="h2-text-container text m-1">
+      <span class="h2-text">New</span>
+    </h2>
+
+    <h3 class="title-text-container text m-1">
+      <span class="title-text">hoodies & sweetshirt</span>
+    </h3>
+
+    <h4 class="sales-header-text-container text m-1">
+      <span class="sales-header-text">1 June - 10 June 2021</span>
+    </h4>
+
+    <a href="#" class="explore-text-container text m-1">
+      <span class="explore-text">explore now</span>
+    </a>
+
+    <p class="sales-text-container m-1">
+      <span class="sales-text">
+        Spend minimal $100 get 30% off voucher code for your next purchase
+      </span>
+    </p>
+
+    <p class="hero-text-container m-1">
+      <span class="hero-text">
+        live for influential and innovative fashion!
+      </span>
+    </p>
+
+    <p class="gray-text-container text m-1">
+      <span class="gray-text">
+        Get 30% off for first transaction using Rondovision mobile app for now.
+      </span>
+    </p>
+
+    <h2 class="news-latter-header-container text m-1r">
+      <span class="news-latter-header-text">
+        JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO
+      </span>
+    </h2>
+
+    <p class="news-latter-text-container text m-1">
+      <span class="news-latter-text">
+        live for influential and innovative fashion!
+      </span>
+    </p>
+  </body>
+</html>

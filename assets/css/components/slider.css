@@ -1,0 +1,22 @@
+.slider {
+  background-color: var(--yellow-color);
+  height: auto;
+  align-items: center;
+  padding: 6em 7em;
+}
+
+.slider .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+.slider .item {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  cursor: pointer;
+}
+
+.slider .item img {
+  object-fit: cover;
+}

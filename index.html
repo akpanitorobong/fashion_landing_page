@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/components/base.css" />
+    <link rel="stylesheet" href="assets/css/components/typography.css" />
+    <link rel="stylesheet" href="assets/css/components/menu.css" />
+    <link rel="stylesheet" href="assets/css/components/button.css" />
+    <link rel="stylesheet" href="assets/css/components/card.css" />
+    <link rel="stylesheet" href="assets/css/components/utils.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/components/slider.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>Shopping App</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu-group container animate__animated animate__slideInDown">
+        <div class="menu-container">
+          <div class="mobile-menu-group align-center text d-flex space-between">
+            <div class="fashion-group text-u align-center">
+              <img src="/assets/img/logo.png" class="logo" alt="fashion-logo" />
+              <span><a href="#">fashion</a></span>
+            </div>
+            <div class="burger" onclick="toggleMenu(this);">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+          <nav class="menu-links text-u">
+            <a href="#" class="menu-item">catalogue</a>
+            <a href="#" class="menu-item">fashion</a>
+            <a href="#" class="menu-item">favorite</a>
+            <a href="#" class="menu-item">lifestyle</a>
+            <a href="#" class="menu-item sign-up">sign-up</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- animate__animated animate__bounce animate__delay-2s animate__slower animate__infinite -->
+    <main>
+      <div class="overlay"></div>
+
+      <section id="main" class="main arrive-animation container">
+        <div class="header-content d-flex m-1 justify-center">
+          <div class="header-left-content">
+            <h1 class="h1-text-container text m-1">
+              <span class="h1-text">
+                <span class="shake-container text">
+                  <span
+                    id="shake-white"
+                    class="shake-animation shake text"
+                  ></span>
+                  <span class="shake-text-container">
+                    <span class="shake-text">let's</span>
+                  </span>
+                </span>
+                <div class="no-shake-text-container">
+                  <p class="h1-noshake-text">explore</p>
+                </div>
+                <span class="shake-container text">
+                  <span
+                    id="shake-yellow"
+                    class="shake-animation shake shake-yellow"
+                  ></span>
+                  <span class="shake-text-container">
+                    <span class="shake-text">unique</span>
+                  </span>
+                </span>
+                <div class="no-shake-text-container">
+                  <p class="h1-noshake-text">clothes.</p>
+                </div>
+              </span>
+            </h1>
+            <p class="hero-text-container m-1 text-c">
+              <span class="hero-text">
+                live for influential and innovative fashion!
+              </span>
+            </p>
+            <div class="shop-button-frame d-flex align-center justify-center">
+              <div class="curved-vector-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="120"
+                  height="32"
+                  viewBox="0 0 190 32"
+                  fill="none"
+                  class="curved-vector curve"
+                >
+                  <path
+                    d="M0 30.6152C48 -11.7848 146.667 -1.05149 190 9.61518C176.4 33.6152 57.6667 33.6152 0 30.6152Z"
+                    fill="#EBD96B"
+                  />
+                </svg>
+              </div>
+              <button class="shop-now text-c">shop now</button>
+            </div>
+          </div>
+          <div class="header-right-content">
+            <img
+              class="right-content-img"
+              src="/assets/img/header-images/header-img.png"
+              alt="header img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="slider">
+        <div class="slider-img-group owl-carousel owl-theme container">
+          <div class="item">
+            <img
+              src="/assets/img/sponsors/sponsor-amazon.png"
+              alt="sponsor-amazon"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="/assets/img/sponsors/sponsor-H-m.png"
+              alt="sponsor-H-m
+            "
+            />
+          </div>
+          <div class="item">
+            <img
+              src="/assets/img/sponsors/sponsor-lacoste.png"
+              alt="sponsor-lacoste"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="/assets/img/sponsors/sponsor-levi.png"
+              alt="sponsor-levi"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="/assets/img/sponsors/sponsor-obey.png"
+              alt="sponsor-obey"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="/assets/img/sponsors/sponsor-shopify.png"
+              alt="sponsor-shopify"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="new-arrivals">
+        <div class="new-arrivals-container container">
+          <h2 class="h2-text-container text text-u m-1">
+            <span class="h2-text">New Arrivals</span>
+          </h2>
+          <div class="curved-vector-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="120"
+              height="32"
+              viewBox="0 0 190 32"
+              fill="none"
+              class="curved-vector curve"
+            >
+              <path
+                d="M0 30.6152C48 -11.7848 146.667 -1.05149 190 9.61518C176.4 33.6152 57.6667 33.6152 0 30.6152Z"
+                fill="#EBD96B"
+              />
+            </svg>
+          </div>
+          <div class="card-group d-flex flex-col">
+            <div class="card m-1">
+              <img
+                class="card-image height"
+                src="/assets/img/new-arrivals/new-arrivals1.png"
+                alt="product image"
+              />
+              <h3 class="title-text-container text m-1">
+                <span class="title-text">hoodies & sweetshirt</span>
+              </h3>
+              <a href="#" class="explore-text-container text m-1">
+                <span class="explore-text">explore now</span>
+                <svg
+                  class="arrow-right"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="24"
+                  viewBox="0 0 34 24"
+                  fill="none"
+                >
+                  <path
+                    d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807611 21.9792 0.807611 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z"
+                    fill="#797979"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="card m-1">
+              <img
+                class="height card-image"
+                src="/assets/img/new-arrivals/new-arrivals2.png"
+                alt="product image"
+              />
+              <h3 class="title-text-container text m-1">
+                <span class="title-text">Coats & Parkas</span>
+              </h3>
+              <a href="#" class="explore-text-container text m-1">
+                <span class="explore-text">explore now</span>
+                <svg
+                  class="arrow-right"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="24"
+                  viewBox="0 0 34 24"
+                  fill="none"
+                >
+                  <path
+                    d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807611 21.9792 0.807611 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z"
+                    fill="#797979"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="card m-1">
+              <img
+                class="height card-image"
+                src="/assets/img/new-arrivals/new-arrivals3.png"
+                alt="product image"
+              />
+              <h3 class="title-text-container text m-1">
+                <span class="title-text">Tees & T-Shirt</span>
+              </h3>
+              <a href="#" class="explore-text-container text m-1">
+                <span class="explore-text">explore now</span>
+                <svg
+                  class="arrow-right"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="24"
+                  viewBox="0 0 34 24"
+                  fill="none"
+                >
+                  <path
+                    d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807611 21.9792 0.807611 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z"
+                    fill="#797979"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="payday-sale" class="payday-sale">
+        <div class="payday-container d-flex flex-col-rev container">
+          <div class="img-container">
+            <img
+              class="payday-sale-img animate__animated"
+              src="/assets/img/payday-img.png"
+              alt="yellow dress girl"
+            />
+          </div>
+          <div class="payday-sale-text d-flex flex-col">
+            <h1 class="h1-text-container text m-1">
+              <span class="h1-text">
+                <span class="shake-container text">
+                  <span class="shake"></span>
+                  <span class="shake-text-container">
+                    <span class="shake-text">payday</span>
+                  </span>
+                </span>
+                <div class="no-shake-text-container">sale now</div>
+              </span>
+            </h1>
+            <p class="sales-text-container m-1">
+              <span class="sales-text">
+                Spend minimal $100 get 30% off voucher code for your next
+                purchase
+              </span>
+            </p>
+            <h4 class="sales-header-text-container text m-1">
+              <span class="sales-header-text">1 June - 10 June 2021</span>
+            </h4>
+            <p class="sales-text-container m-1">
+              <span class="sales-text"> *Terms & Conditions apply </span>
+            </p>
+            <div class="btn-container d-flex justify-center">
+              <button class="shop-now text-c">shop now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="youngs-favorite" class="container">
+        <div class="header-container">
+          <h2 class="h2-text-container text text-c m-1">
+            <span class="h2-text">young's favorite</span>
+          </h2>
+          <div class="curved-vector-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="120"
+              height="32"
+              viewBox="0 0 190 32"
+              fill="none"
+              class="curved-vector curve"
+            >
+              <path
+                d="M0 30.6152C48 -11.7848 146.667 -1.05149 190 9.61518C176.4 33.6152 57.6667 33.6152 0 30.6152Z"
+                fill="#EBD96B"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="card-group d-flex flex-col">
+          <div class="card">
+            <img
+              class="height card-image"
+              src="/assets/img/youngs-favorite/yf-1.png"
+              alt="product image"
+            />
+            <h3 class="title-text-container text m-1">
+              <span class="title-text">Trending on instagram</span>
+            </h3>
+            <div class="card-footer">
+              <a href="#" class="explore-text-container text m-1">
+                <span class="explore-text">explore now</span>
+                <svg
+                  class="arrow-right"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="24"
+                  viewBox="0 0 34 24"
+                  fill="none"
+                >
+                  <path
+                    d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807611 21.9792 0.807611 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z"
+                    fill="#797979"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="height card-image"
+              src="/assets/img/youngs-favorite/yf-2.png"
+              alt="product image"
+            />
+            <h3 class="title-text-container text m-1">
+              <span class="title-text">All Under $40</span>
+            </h3>
+            <div class="card-footer">
+              <a href="#" class="explore-text-container text m-1">
+                <span class="explore-text">explore now</span>
+                <svg
+                  class="arrow-right"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="24"
+                  viewBox="0 0 34 24"
+                  fill="none"
+                >
+                  <path
+                    d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807611 21.9792 0.807611 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z"
+                    fill="#797979"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-invite container d-flex flex-col align-center">
+        <div class="left-content d-flex align-center text-cen flex-col">
+          <h2 class="h2-text-container text text-c">
+            <span class="h2-text">DOWNLOAD APP & GET THE VOUCHER!</span>
+          </h2>
+          <div class="text">
+            <span class="app-invite-text">
+              Get 30% off for first transaction using Rondovision mobile app for
+              now.
+            </span>
+          </div>
+          <div class="download-icons d-flex">
+            <div class="img-container">
+              <img
+                src="/assets/img/dowload-icons/apple-dl.png"
+                alt="download for apple"
+                class="download-img"
+              />
+            </div>
+            <div class="img-container">
+              <img
+                src="/assets/img/dowload-icons/android-dl.png"
+                alt="download for android"
+                class="download-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="phone">
+          <div class="phone-header">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="22"
+              viewBox="0 0 21 22"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_2_350)">
+                <path
+                  d="M3.50037 7.21177H6.9979V3.71423H3.50037V7.21177ZM8.74667 17.7044H12.2442V14.2068H8.74667V17.7044ZM3.50037 17.7044H6.9979V14.2068H3.50037V17.7044ZM3.50037 12.4581H6.9979V8.96054H3.50037V12.4581ZM8.74667 12.4581H12.2442V8.96054H8.74667V12.4581ZM13.993 3.71423V7.21177H17.4905V3.71423H13.993ZM8.74667 7.21177H12.2442V3.71423H8.74667V7.21177ZM13.993 12.4581H17.4905V8.96054H13.993V12.4581ZM13.993 17.7044H17.4905V14.2068H13.993V17.7044Z"
+                  fill="#EBD96B"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2_350">
+                  <rect
+                    width="20.9852"
+                    height="20.9852"
+                    fill="white"
+                    transform="translate(0.00341797 0.216797)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <img
+              class="phone-profile-image"
+              src="/assets/img/phone-profile.jpeg"
+              alt="profile image"
+            />
+          </div>
+
+          <div class="phone-body">
+            <h2 class="p-text-container text">
+              <span class="p-text">Match your style</span>
+              <svg
+                class="btn-curve"
+                xmlns="http://www.w3.org/2000/svg"
+                width="190"
+                height="32"
+                viewBox="0 0 190 32"
+                fill="none"
+              >
+                <path
+                  d="M0 30.6152C48 -11.7848 146.667 -1.05149 190 9.61518C176.4 33.6152 57.6667 33.6152 0 30.6152Z"
+                  fill="#EBD96B"
+                />
+              </svg>
+            </h2>
+
+            <div class="search-container d-flex align-center">
+              <div class="search-icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M14.0532 12.3841H13.3625L13.1176 12.148C13.9745 11.1512 14.4904 9.85713 14.4904 8.44937C14.4904 5.31033 11.9459 2.76587 8.80691 2.76587C5.66787 2.76587 3.12341 5.31033 3.12341 8.44937C3.12341 11.5884 5.66787 14.1329 8.80691 14.1329C10.2147 14.1329 11.5088 13.617 12.5056 12.7601L12.7416 13.0049V13.6957L17.1136 18.0588L18.4164 16.756L14.0532 12.3841ZM8.80691 12.3841C6.62969 12.3841 4.87218 10.6266 4.87218 8.44937C4.87218 6.27215 6.62969 4.51464 8.80691 4.51464C10.9841 4.51464 12.7416 6.27215 12.7416 8.44937C12.7416 10.6266 10.9841 12.3841 8.80691 12.3841Z"
+                    fill="#6E6F72"
+                  />
+                </svg>
+              </div>
+              <div class="search-text-container text">
+                <div class="search-text text-c">search</div>
+              </div>
+            </div>
+
+            <div class="trending-container">
+              <button class="text yellow"><span>trending now</span></button>
+              <button class="text"><span>all</span></button>
+              <button class="text"><span>new</span></button>
+            </div>
+
+            <div class="products d-flex flex-col text">
+              <div class="row d-flex">
+                <div class="card mobile">
+                  <img
+                    class="card-image"
+                    src="/assets/img/mobile-images/phone-product-img.jpeg"
+                    alt="product image"
+                  />
+                  <h3 class="title-text-container text">
+                    <span class="title-text">Polkadot Red Dress</span>
+                  </h3>
+                  <div class="card-footer">
+                    <div class="explore-text-container text">
+                      <span class="explore-text">&#8358; 15,000</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mobile">
+                  <img
+                    class="card-image"
+                    src="/assets/img/mobile-images/pink-dress-mobile.jpeg"
+                    alt="product image"
+                  />
+                  <h3 class="title-text-container text">
+                    <span class="title-text">Striped Pink Dress</span>
+                  </h3>
+                  <div class="card-footer">
+                    <div class="explore-text-container text">
+                      <span class="explore-text">&#8358; 35,000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row d-flex">
+                <div class="card mobile">
+                  <img
+                    class="card-image"
+                    src="/assets/img/mobile-images/spotted-dress-mobile.jpeg"
+                    alt="product image"
+                  />
+                  <h3 class="title-text-container text">
+                    <span class="title-text">Polkadot Pink Dress</span>
+                  </h3>
+                  <div class="card-footer">
+                    <div class="explore-text-container text">
+                      <span class="explore-text">&#8358; 35,000</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mobile">
+                  <img
+                    class="card-image"
+                    src="/assets/img/mobile-images/pink-crop-mobile.jpeg"
+                    alt="product image"
+                  />
+                  <h3 class="title-text-container text">
+                    <span class="title-text">Polkadot Red Dress</span>
+                  </h3>
+                  <div class="card-footer">
+                    <div class="explore-text-container text">
+                      <span class="explore-text">&#8358; 105,000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row d-flex">
+                <div class="card mobile">
+                  <img
+                    class="card-image"
+                    src="/assets/img/mobile-images/phone-product-img.jpeg"
+                    alt="product image"
+                  />
+                  <h3 class="title-text-container text">
+                    <span class="title-text">Polkadot Red Dress</span>
+                  </h3>
+                  <div class="card-footer">
+                    <div class="explore-text-container text">
+                      <span class="explore-text">&#8358; 15,000</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mobile">
+                  <img
+                    class="card-image"
+                    src="/assets/img/mobile-images/pink-dress-mobile.jpeg"
+                    alt="product image"
+                  />
+                  <h3 class="title-text-container text">
+                    <span class="title-text">Striped Pink Dress</span>
+                  </h3>
+                  <div class="card-footer">
+                    <div class="explore-text-container text">
+                      <span class="explore-text">&#8358; 35,000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="phone-nav">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M9.45189 23.3916V15.3678H14.1736V23.3916H20.0757V12.6932H23.6169L11.8127 0.657593L0.00854492 12.6932H3.5498V23.3916H9.45189Z"
+                fill="#EBD96B"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+            >
+              <path
+                d="M0.200928 15.3957H21.1861V12.3978H0.200928V15.3957ZM0.200928 21.3915H21.1861V18.3936H0.200928V21.3915ZM0.200928 9.39992H21.1861V6.40203H0.200928V9.39992ZM0.200928 0.40625V3.40414H21.1861V0.40625H0.200928Z"
+                fill="#959292"
+              />
+            </svg>
+
+            <div class="cart-group">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M7.85229 18.8448C6.55383 18.8448 5.50325 19.8678 5.50325 21.1182C5.50325 22.3686 6.55383 23.3916 7.85229 23.3916C9.15075 23.3916 10.2131 22.3686 10.2131 21.1182C10.2131 19.8678 9.15075 18.8448 7.85229 18.8448ZM0.769775 0.657593V2.93099H3.13061L7.38012 11.5585L5.78655 14.3435C5.59769 14.6617 5.49145 15.0368 5.49145 15.4347C5.49145 16.6851 6.55383 17.7081 7.85229 17.7081H22.0173V15.4347H8.34806C8.18281 15.4347 8.05296 15.3097 8.05296 15.1505L8.08837 15.0141L9.15075 13.1613H17.9449C18.8302 13.1613 19.6093 12.6952 20.0106 11.9905L24.2365 4.61331C24.3309 4.45417 24.3782 4.26093 24.3782 4.06769C24.3782 3.44251 23.847 2.93099 23.1977 2.93099H5.73934L4.62974 0.657593H0.769775ZM19.6565 18.8448C18.358 18.8448 17.3074 19.8678 17.3074 21.1182C17.3074 22.3686 18.358 23.3916 19.6565 23.3916C20.9549 23.3916 22.0173 22.3686 22.0173 21.1182C22.0173 19.8678 20.9549 18.8448 19.6565 18.8448Z"
+                  fill="#959292"
+                />
+              </svg>
+              <div class="items-container d-flex align-center justify-center">
+                <span>1</span>
+              </div>
+            </div>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M12.0127 12.0247C15.2736 12.0247 17.9148 9.48135 17.9148 6.34121C17.9148 3.20108 15.2736 0.657715 12.0127 0.657715C8.75178 0.657715 6.11059 3.20108 6.11059 6.34121C6.11059 9.48135 8.75178 12.0247 12.0127 12.0247ZM12.0127 14.8665C8.07304 14.8665 0.208496 16.7704 0.208496 20.55V23.3917H23.8169V20.55C23.8169 16.7704 15.9523 14.8665 12.0127 14.8665Z"
+                fill="#959292"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="news-letter">
+        <div class="news-letter-container container d-flex flex-col">
+          <h2 class="news-letter-header text">
+            <span class="header-text">
+              JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO
+            </span>
+          </h2>
+          <div class="news-letter-text text">
+            <span class="body-text">
+              Type your email down below and be young wild generation
+            </span>
+          </div>
+          <div class="mail-submit-box d-flex align-center">
+            <div class="textbox-container text">
+              <input
+                class="customer-mail-textbox"
+                placeholder="Add your email here"
+                type="email"
+              />
+            </div>
+            <button class="submit-mail-btn btn text-u">send</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container container text d-flex flex-col">
+        <div class="social-media-fashion-section d-flex flex-col">
+          <h2 class="footer-header text-u">fashion</h2>
+          <span class="footer-text">
+            Complete your style with awesome clothes from us.
+          </span>
+          <div class="social-media d-flex justify-center">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="social-media-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="52"
+                height="53"
+                viewBox="0 0 52 53"
+                fill="none"
+                class="social-media-icon"
+              >
+                <rect
+                  y="0.395996"
+                  width="52"
+                  height="52"
+                  rx="15"
+                  fill="#EBD96B"
+                />
+                <path
+                  d="M31.5122 27.4585L32.2065 22.9341H27.8652V19.998C27.8652 18.7603 28.4717 17.5537 30.416 17.5537H32.3896V13.7017C32.3896 13.7017 30.5986 13.396 28.8862 13.396C25.311 13.396 22.9741 15.563 22.9741 19.4858V22.9341H19V27.4585H22.9741V38.396H27.8652V27.4585H31.5122Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="social-media-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="52"
+                height="53"
+                viewBox="0 0 52 53"
+                fill="none"
+                class="social-media-icon"
+              >
+                <rect
+                  y="0.395996"
+                  width="52"
+                  height="52"
+                  rx="15"
+                  fill="#EBD96B"
+                />
+                <path
+                  d="M25.946 20.7268C22.8406 20.7268 20.3357 23.2317 20.3357 26.3372C20.3357 29.4426 22.8406 31.9475 25.946 31.9475C29.0515 31.9475 31.5564 29.4426 31.5564 26.3372C31.5564 23.2317 29.0515 20.7268 25.946 20.7268ZM25.946 29.9846C23.9392 29.9846 22.2986 28.3489 22.2986 26.3372C22.2986 24.3254 23.9343 22.6897 25.946 22.6897C27.9578 22.6897 29.5935 24.3254 29.5935 26.3372C29.5935 28.3489 27.9529 29.9846 25.946 29.9846ZM33.0945 20.4973C33.0945 21.2249 32.5085 21.8059 31.7859 21.8059C31.0584 21.8059 30.4773 21.22 30.4773 20.4973C30.4773 19.7747 31.0632 19.1887 31.7859 19.1887C32.5085 19.1887 33.0945 19.7747 33.0945 20.4973ZM36.8103 21.8254C36.7273 20.0725 36.3269 18.5198 35.0427 17.2405C33.7634 15.9612 32.2107 15.5608 30.4578 15.4729C28.6511 15.3704 23.2361 15.3704 21.4294 15.4729C19.6814 15.5559 18.1287 15.9563 16.8445 17.2356C15.5603 18.5149 15.1648 20.0676 15.0769 21.8206C14.9744 23.6272 14.9744 29.0422 15.0769 30.8489C15.1599 32.6018 15.5603 34.1545 16.8445 35.4338C18.1287 36.7131 19.6765 37.1135 21.4294 37.2014C23.2361 37.304 28.6511 37.304 30.4578 37.2014C32.2107 37.1184 33.7634 36.718 35.0427 35.4338C36.322 34.1545 36.7224 32.6018 36.8103 30.8489C36.9128 29.0422 36.9128 23.6321 36.8103 21.8254ZM34.4763 32.7874C34.0955 33.7444 33.3582 34.4817 32.3962 34.8674C30.9558 35.4387 27.5378 35.3069 25.946 35.3069C24.3542 35.3069 20.9314 35.4338 19.4958 34.8674C18.5388 34.4866 17.8015 33.7493 17.4158 32.7874C16.8445 31.3469 16.9763 27.929 16.9763 26.3372C16.9763 24.7454 16.8494 21.3225 17.4158 19.887C17.7966 18.9299 18.5339 18.1926 19.4958 17.8069C20.9363 17.2356 24.3542 17.3674 25.946 17.3674C27.5378 17.3674 30.9607 17.2405 32.3962 17.8069C33.3533 18.1877 34.0906 18.925 34.4763 19.887C35.0476 21.3274 34.9158 24.7454 34.9158 26.3372C34.9158 27.929 35.0476 31.3518 34.4763 32.7874Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="social-media-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="52"
+                height="53"
+                viewBox="0 0 52 53"
+                fill="none"
+                class="social-media-icon"
+              >
+                <rect
+                  y="0.395996"
+                  width="52"
+                  height="52"
+                  rx="15"
+                  fill="#EBD96B"
+                />
+                <path
+                  d="M38.4302 21.4563C38.446 21.6783 38.446 21.9004 38.446 22.1225C38.446 28.8959 33.2906 36.7005 23.868 36.7005C20.9651 36.7005 18.2684 35.8598 16 34.4004C16.4125 34.448 16.809 34.4639 17.2373 34.4639C19.6326 34.4639 21.8375 33.6549 23.5983 32.2748C21.3458 32.2272 19.4581 30.752 18.8077 28.7215C19.125 28.769 19.4422 28.8008 19.7754 28.8008C20.2354 28.8008 20.6955 28.7373 21.1237 28.6263C18.776 28.1504 17.0152 26.0882 17.0152 23.5978V23.5343C17.6973 23.915 18.4905 24.153 19.3312 24.1847C17.9511 23.2646 17.0469 21.6942 17.0469 19.9175C17.0469 18.9658 17.3007 18.0933 17.7449 17.3319C20.2671 20.441 24.0583 22.4714 28.3096 22.6936C28.2303 22.3128 28.1827 21.9163 28.1827 21.5197C28.1827 18.6961 30.4669 16.396 33.3064 16.396C34.7816 16.396 36.1141 17.0146 37.05 18.014C38.208 17.7919 39.3184 17.3636 40.302 16.7767C39.9212 17.9665 39.1122 18.9658 38.0494 19.6003C39.0805 19.4893 40.0799 19.2037 40.9999 18.8072C40.302 19.8224 39.4295 20.7265 38.4302 21.4563Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="social-media-link"
+            >
+              <div
+                class="social-media-icon text d-flex align-center justify-center linked-in"
+              >
+                <span class="linked-in-text">in</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="hyperlinks d-flex space-evenly text-c">
+          <ul class="link-group group1 d-flex flex-col">
+            <a class="footer-link footer-header" href="#">company</a>
+            <a class="footer-link" href="#">about</a>
+            <a class="footer-link" href="#">contact us</a>
+            <a class="footer-link" href="#">support</a>
+            <a class="footer-link" href="#">careers</a>
+          </ul>
+          <ul class="link-group group2 d-flex flex-col">
+            <a class="footer-link footer-header" href="#">Quick Link</a>
+            <a class="footer-link" href="#">Share Location</a>
+            <a class="footer-link" href="#">Orders Tracking</a>
+            <a class="footer-link" href="#">Size Guide</a>
+            <a class="footer-link" href="#">FAQs</a>
+          </ul>
+          <ul class="link-group group3 d-flex flex-col">
+            <a href="#" class="footer-link footer-header">legal</a>
+            <a href="#" class="footer-link">Terms & conditions</a>
+            <a href="#" class="footer-link">privacy policy</a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/js/js.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/assets/js/owl-carousel.js"></script>
+  </body>
+</html>

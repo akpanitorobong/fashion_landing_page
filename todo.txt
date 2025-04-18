@@ -1,0 +1,2 @@
+Add animation on slider
+Menu 
