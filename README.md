@@ -1,7 +1,7 @@
 # Fashion Landing Page
 This is a responsive landing page for a fashion website, built with HTML, CSS, and JavaScript.
 
-## Features:
+## 🎯 Features:
 - Clean and modern design
 
 - Fully responsive across devices
@@ -10,7 +10,7 @@ This is a responsive landing page for a fashion website, built with HTML, CSS, a
 
 - Built using vanilla HTML, CSS, and JavaScript
 
-## Technologies Used:
+## 🔧 Technologies Used:
 - HTML
 
 - CSS
